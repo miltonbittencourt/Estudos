@@ -1,0 +1,9 @@
+1 - escreve o passo a passo em portugues
+	1 - entrar no sistema da empresa (link do drive)
+	2 - navegar no sistema e encontrar a base de vendas (entrar na pasta "exportar")
+	3 - fazer download da base
+	4 - importar a base para o py
+	5 - calcular os indicadores de vendas
+	6 - enviar um email para a diretoria com os indicadores
+
+2 - traduz para python

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dentran</title>
+</head>
+<body>
+    <h1>Sistema de multas</h1>
+    Velocidade do carro: <input type="number" name="txtvel" id="itxtvel"> Km/h
+    <input type="button" value="Verificar" onclick="verificar()">
+
+    <div id="res">
+
+    </div>
+
+    <script>
+        function verificar() {
+            var v = Number(document.getElementById('itxtvel').value)
+            var res = document.getElementById('res')
+
+            if (v <= 60) {
+                m = 'Você está dentro do limite de velocidade.'
+            } else {
+                m = 'Você ultrapassou o limite de velocidade. MULTADO!'
+            }
+
+            res.innerHTML = `Sua velocidade é de ${v} Km/h. ` + m + ' Dirija sempre com segurança!'
+        }
+    </script>
+</body>
+</html>

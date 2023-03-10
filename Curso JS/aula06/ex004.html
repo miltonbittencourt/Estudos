@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font: normal 20pt Arial;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        var nome = window.prompt('Qual é o seu nome?')
+        document.write(`Olá <strong>${nome}</strong>! Seu nome tem ${nome.length} letras.<br>`)
+        document.write(`Seu nome em maiúsculas é ${nome.toUpperCase()}.<br>`)
+        document.write(`Seu nome em minúsculas é ${nome.toLowerCase()}.`)
+
+        /* 
+            Formatação em números
+
+            Quando temos um float, podemos usar a função toFixed() para definir quantas casas decimais temos depois do ponto.
+
+            Exemplo
+
+            var n1 = 1550.3333
+            document.write(`${n1.toFixed(2)}`)
+
+            A mensagem exibida seria:
+            1550.33
+
+            Também, se quisermos substituir o "." pela "," como demarcador decimal, podemos utilizar:
+            document.write(`${n1.toFixed(2).replace('.', ',')}`)
+
+            A mensagem exibida seria:
+            1.550,33
+
+            Ainda, se quisermos ambas as formatações definidas de acordo com o padrão monetário utilizado regionalmente, podemos utilizar o comando .toLocaleString(), definindo então a língua e a moeda utilizadas.
+
+            Exemplo
+
+            document.write(`${n1.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})}`)
+
+            A mensagem exibida seria:
+            R$ 1.550,33
+        */
+    </script>
+</body>
+</html>

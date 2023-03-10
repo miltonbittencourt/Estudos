@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiro Doc JS</title>
+    <style>
+        body {
+            background-color: rgb(66, 66, 206);
+            color: white;
+            font: normal 20pt Arial;
+        }
+    </style>
+</head>
+<body>
+    <h1>Bora de JS</h1>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit eos, consectetur fuga mollitia, laborum, possimus ea expedita autem accusantium voluptate repellendus in debitis neque. Totam ut minus adipisci laboriosam sit?</p>
+
+    <script>
+        var n1 = Number(window.prompt('Digite um número: '))
+        var n2 = Number(window.prompt('Digite outro número: '))
+
+/* 
+            (number + number) para adição
+            (string + string) para concatenação
+
+            windows.prompt retorna sempre uma string, portanto é necesário converter a variável para o tipo number utilizando:
+
+            Number.parseInt() - Para números inteiros
+            Number.parseFloat() - Para números reais
+
+            Temos também a opção de usar somente Number(), onde o próprio JS identifica se o número é Int ou Float
+
+            De modo inverso, para converter uma número para string, usamos String() ou n.toString(), onde 'n' é o nome da variável
+        */
+
+        var s = n1 + n2
+        window.alert('O valor da soma é: ' + s)
+
+        /* 
+            Para realizar a concatenação, podemos utilizar também o método `O valor da soma é: ${s}`
+        */
+
+        window.alert(`A soma entre ${n1} e ${n2} é igual a ${s}`)
+
+        /* 
+            Formatação de Strings
+            s.length - quantos caracteres tem a string
+            s.toUpperCase() - faz todos os caracteres ficarem maiúsculos
+            s.toLowerCase() - faz todos os caracteres ficarem minúsculos
+        */
+    </script>
+</body>
+</html>
